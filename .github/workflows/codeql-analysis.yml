@@ -33,8 +33,11 @@ jobs:
 
     - name: Setup CodeQL Runner
       run: |
+        pwd
         wget -q https://github.com/github/codeql-action/releases/download/codeql-bundle-20201106/codeql-runner-linux
         sudo install -o root -g root -m 0755 codeql-runner-linux /usr/local/bin/
+        ls -l
+        echo ${{ github.workspace }}
     
     - name: Execute CodeQL Runner
       run: |
