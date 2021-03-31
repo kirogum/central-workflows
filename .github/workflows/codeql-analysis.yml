@@ -19,8 +19,7 @@ jobs:
       matrix:
         language: ['javascript']
         repository:
-          - doodly-doofest
-          - probable-octo-doodle
+          - verbose-broccoli
 
     steps:
     - name: Fetch repository from org
